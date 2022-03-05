@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:layout_weight="{4:0}">
+		<TextView android:textStyle="0x1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" />
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_below="false">
+			<RelativeLayout android:layout_width="-1" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+				<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="5dp" android:text="0MB / 0MB" android:layout_alignParentLeft="true" style="@android:style/TextAppearance.Small" />
+				<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="0%" android:layout_alignRight="false" style="@android:style/TextAppearance.Small" />
+				<ProgressBar android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_weight="{4:1065353216}" android:layout_below="false" style="?android:attr/progressBarStyleHorizontal" />
+				<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="5dp" android:layout_below="false" android:layout_alignParentLeft="true" style="@android:style/TextAppearance.Small" />
+				<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_below="false" android:layout_alignRight="false" style="@android:style/TextAppearance.Small" />
+			</RelativeLayout>
+			<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2">
+				<Button android:layout_gravity="0x10" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:layout_marginBottom="10dp" android:minWidth="94dp" android:minHeight="40dp" android:text="Pause Download" android:layout_weight="{4:0}" />
+				<Button android:layout_gravity="0x10" android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:layout_marginBottom="10dp" android:minWidth="94dp" android:minHeight="40dp" android:text="Cancel" android:layout_weight="{4:0}" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:orientation="1" android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+		<TextView android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_margin="10dp" android:text="Would you like to enable downloading over cellular connections? Depending on your data plan, this may cost you money." />
+		<TextView android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_margin="10dp" android:text="If you choose not to enable downloading over cellular connections, the download will automatically resume when wi-fi is available." />
+		<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2">
+			<Button android:layout_gravity="0x11" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_margin="10dp" android:text="Resume download" />
+			<Button android:layout_gravity="0x11" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_margin="10dp" android:text="Wi-Fi settings" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

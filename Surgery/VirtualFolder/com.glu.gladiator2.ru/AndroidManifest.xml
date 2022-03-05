@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="202" android:versionName="2.0.2" android:installLocation="auto" package="com.glu.gladiator2.ru">
+	<supports-screens android:anyDensity="true" android:smallScreens="false" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+	<application android:label="Legend" android:icon="res/drawable-xhdpi/app_icon.png" android:debuggable="false" android:backupAgent="com.glu.plugins.GluBackupAgent" android:restoreAnyVersion="true">
+		<activity android:label="Legend" android:name="com.google.android.vending.expansion.downloader_impl.DownloaderActivity" android:screenOrientation="landscape" android:configChanges="0x4b0">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:label="Legend" android:name="com.glu.plugins.AUnityInstaller.UnityLauncherActivity" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="0x4b0" />
+		<activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:label="Legend" android:name="com.glu.plugins.AJTInternet$WebActivity" android:screenOrientation="landscape" android:configChanges="0xb0" />
+		<activity android:label="Legend" android:name="com.unity3d.player.UnityPlayerActivity" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="0x4b0" />
+		<activity android:label="Legend" android:name="com.unity3d.player.VideoPlayer" android:screenOrientation="landscape" android:configChanges="0x430" />
+		<activity android:name="com.tapjoy.TJCOffersWebView" android:configChanges="0xa0" />
+		<activity android:name="com.tapjoy.TapjoyFeaturedAppWebView" android:configChanges="0xa0" />
+		<activity android:name="com.tapjoy.TapjoyVideoView" android:configChanges="0xa0" />
+		<activity android:theme="@android:style/Theme.Dialog" android:name="com.playhaven.src.publishersdk.content.PHContentView" />
+		<activity android:name="com.wildtangent.brandboost.BrandBoostActivity" android:exported="false" />
+		<activity android:name="com.amazon.mobileads.mraid.MraidBrowser" android:configChanges="0xa0" />
+		<activity android:name="com.amazon.mobileads.video.VideoActionHandler" android:configChanges="0xa0" />
+		<service android:name="com.google.android.vending.expansion.downloader_impl.GDownloaderService" />
+		<receiver android:name="com.google.android.vending.expansion.downloader_impl.AlarmReceiver" />
+		<receiver android:name="com.glu.plugins.NotificationReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+		<service android:name="com.glu.plugins.google.BillingService" />
+		<receiver android:name="com.glu.plugins.google.BillingReceiver">
+			<intent-filter>
+				<action android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+				<action android:name="com.android.vending.billing.RESPONSE_CODE" />
+				<action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="com.amazon.inapp.purchasing.ResponseReceiver">
+			<intent-filter>
+				<action android:name="com.amazon.inapp.purchasing.NOTIFY" android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY" />
+			</intent-filter>
+		</receiver>
+		<meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIH1fDZpXwbjhPjD4pXVgc1qcCYqkaHGezsAQT6w" />
+	</application>
+	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="16" />
+	<uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.BACKUP" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="com.android.vending.BILLING" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-feature android:name="android.hardware.touchscreen" android:required="true" />
+	<uses-feature android:glEsVersion="0x20000" android:required="true" />
+	<uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="true" />
+</manifest>
